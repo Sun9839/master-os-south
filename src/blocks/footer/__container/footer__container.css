@@ -2,5 +2,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 79px;
+}
+@media screen and (max-width: 1279px){
+    .footer__container{
+        flex-direction: column-reverse;
+    }
 }

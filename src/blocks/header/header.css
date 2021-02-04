@@ -4,11 +4,11 @@
 .header{
     display: flex;
     flex-direction: row;
-    margin: 83px 40px 0 40px;
+    padding: 83px 40px 0 40px;
 }
 @media screen and (max-width: 767px){
     .header{
-        margin: 40px auto 0 auto;
-        width: 288px;
+        padding: 40px 5vw 0 5vw;
+        width: 90vw;
     }
 }

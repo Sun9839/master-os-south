@@ -3,9 +3,16 @@
 @import url('./__price/card__price.css');
 .card{
     display: flex;
+    position: relative;
     flex-direction: column;
     background: #FFFFFF;
     border-radius: 15px;
     width: 550px;
     height: 371px;
+}
+@media screen and (max-width: 767px){
+    .card{
+        width: 140px;
+        height: 93px;
+    }
 }

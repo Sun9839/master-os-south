@@ -6,3 +6,9 @@
     padding-bottom: 36px;
     background: #F4F1EC;
 }
+@media screen and (max-width: 767px){
+    .why{
+        background: #242424;
+        padding: 0;
+    }
+}

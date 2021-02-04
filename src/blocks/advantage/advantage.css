@@ -1,8 +1,16 @@
 @import url('./__logo/advantage__logo.css');
 @import url('./__title/advantage__title.css');
 @import url('./__text/advantage__text.css');
+@import url('./__container/advantage__container.css');
 .advantage{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 550px;
+}
+@media screen and (max-width: 767px){
+    .advantage{
+        width: 90vw;
+        height: 230px;
+    }
 }

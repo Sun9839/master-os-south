@@ -1,8 +1,17 @@
 .footer__link-container{
     display: flex;
     flex-direction: row;
-    margin-top: 58px;
 }
-.footer__link-container:first-of-type{
-    margin-top: 88px;
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    .footer__link-container{
+        width: 515px;
+        padding-top: 15px;
+    }
+}
+@media screen and (max-width: 767px){
+    .footer__link-container{
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
 }

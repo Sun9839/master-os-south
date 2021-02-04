@@ -4,3 +4,10 @@
     color: #FFD36A;
     margin: 137px auto 0 auto;
 }
+@media screen and (max-width: 767px){
+    .footer__author{
+        font-size: 8px;
+        line-height: 12px;
+        margin: 70px auto 0 auto;
+    }
+}

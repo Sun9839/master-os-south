@@ -1,8 +1,24 @@
+@import url('./_color/about__text_color_yellow.css');
 .about__text{
     font-size: 26px;
     line-height: 38px;
-    max-width: 612px;
+    width: 31vw;
     color: #F4F1EC;
-    margin: 219px 0 0 40px;
+    padding: 219px 0 0 40px;
     z-index: 4;
+}
+@media screen and (max-width: 1279px){
+    .about__text{
+        padding: 5vw 5vw 0 5vw;
+        width: 90vw;
+        text-align: center;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 767px){
+    .about__text{
+        font-size: 17px;
+        line-height: 25px;
+        color: #242424;
+    }
 }

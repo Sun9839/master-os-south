@@ -4,3 +4,9 @@
     color: #F4F1EC;
     text-decoration: none;
 }
+@media screen and (max-width: 1279px){
+.footer__phone{
+    font-size: 29px;
+    line-height: 43px;
+}
+}

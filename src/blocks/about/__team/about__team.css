@@ -1,7 +1,17 @@
 .about__team{
     position: absolute;
-    width: 1061px;
+    width: 55vw;
     height: 731px;
     top: 180px;
     right: 28px;
+}
+@media screen and (max-width: 1279px){
+    .about__team{
+        position: unset;
+        top: unset;
+        right: unset;
+        width: 90vw;
+        height: auto;
+        padding: 5vw;
+    }
 }

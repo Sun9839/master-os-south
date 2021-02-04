@@ -12,3 +12,11 @@
     height: 129px;
     margin: 70px auto 0 auto;
 }
+@media screen and (max-width: 767px){
+    .services__button{
+        font-size: 18px;
+        line-height: 26px;
+        width: 288px;
+        height: 37px;
+    }
+}

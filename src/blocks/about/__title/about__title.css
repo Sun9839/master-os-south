@@ -5,3 +5,10 @@
     margin: 81px auto 0 auto;
     z-index: 3;
 }
+@media screen and (max-width: 767px){
+    .about__title{
+        color: #242424;
+        font-size: 24px;
+        line-height: 35px;
+    }
+}

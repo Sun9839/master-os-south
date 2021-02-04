@@ -1,11 +1,16 @@
 .navigation__link.navigation__link_color_black{
-    color: #242424;
-    margin: 33px 66px 0 0;
+    padding: 26px 11vh 0 0;
+}
+@media screen and (min-width: 1280px){
+    .navigation__link.navigation__link_color_black{
+        color: #242424;
+    }
 }
 @media screen and (max-width: 767px){
     .navigation__link.navigation__link_color_black{
         font-size: 18px;
         line-height: 24px;
-        margin: 40px auto 0 auto;
+        margin: 0;
+        padding: 0;
     }
 }

@@ -4,3 +4,11 @@
     line-height: 88px;
     margin: 40px auto 0 auto;
 }
+@media screen and (max-width: 767px){
+    .why__title{
+        font-size: 24px;
+        line-height: 35px;
+        margin: 31px auto 0 auto;
+        color: #F4F1EC;
+    }
+}

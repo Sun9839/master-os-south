@@ -1,7 +1,12 @@
 .about__rectangle{
-    max-width: 1396px;
-    height: auto;
+    max-width: 72vw;
+    height: 899px;
     position: absolute;
     bottom: 0;
     right: 0;
+}
+@media screen and (max-width: 1279px){
+    .about__rectangle{
+        display: none;
+    }
 }

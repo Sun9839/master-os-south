@@ -6,7 +6,7 @@
     max-height: 1280px;
     z-index: 2;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1279px){
     .preview__white-rectangle{
         display: none;
     }

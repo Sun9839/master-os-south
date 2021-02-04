@@ -1,4 +1,15 @@
 .footer__requisites{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 5vw;
+}
+.footer__requisites:last-of-type{
+    justify-content: space-around;
+}
+@media screen and (max-width: 1279px){
+    .footer__requisites{
+        align-items: center;
+        padding: 0 5vw;
+    }
 }

@@ -1,28 +1,27 @@
 import React from 'react';
 import Advantage from './Advantage';
-import test from "../images/testElipse.svg";
+import chz from "../images/chz.png";
+import time from '../images/time.png';
+import price from '../images/price.png';
+import experience from '../images/expirence.png';
 
 function Why(props) {
     const advantages = [
         {
-            logo: test,
-            title: 'Цена',
-            text: 'Низкие цены на услуги',
+            logoOne: price,
+            titleOne: 'Цена',
+            textOne: 'Низкие цены на услуги',
+            logoTwo: time,
+            titleTwo: 'Скорость',
+            textTwo: 'Приедем в течении часа или в удобное время',
         },
         {
-            logo: test,
-            title: 'Скорость',
-            text: 'Приедем в течении часа или в удобное время',
-        },
-        {
-            logo: test,
-            title: 'Опыт',
-            text: 'Работаем с клиентами более 10 лет',
-        },
-        {
-            logo: test,
-            title: 'Качество',
-            text: 'Качественное решение любых задач',
+            logoOne: experience,
+            titleOne: 'Опыт',
+            textOne: 'Работаем с клиентами более 10 лет',
+            logoTwo: chz,
+            titleTwo: 'Качество',
+            textTwo: 'Качественное решение любых задач',
         },
     ];
     return(
@@ -32,9 +31,12 @@ function Why(props) {
                 {advantages.map((item) => {
                     return(
                         <Advantage
-                            logo={item.logo}
-                            title={item.title}
-                            text={item.text}
+                            logoOne={item.logoOne}
+                            titleOne={item.titleOne}
+                            textOne={item.textOne}
+                            logoTwo={item.logoTwo}
+                            titleTwo={item.titleTwo}
+                            textTwo={item.textTwo}
                             />);
                 })}
             </div>

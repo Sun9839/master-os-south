@@ -4,7 +4,9 @@
     font-weight: bold;
     line-height: 111.8%;
     color: #FFFFFF;
-    width: 984px;
+    width: 60vw;
+    text-shadow: 2px 2px 4px gray;
+    z-index: 10;
 }
 @media screen and (max-width: 767px){
     .preview__question{

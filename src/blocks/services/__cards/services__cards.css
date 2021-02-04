@@ -1,8 +1,23 @@
 .services__cards{
     display: grid;
     grid-template-columns: repeat(3, 550px);
-    grid-column-gap: 78px;
-    grid-row-gap: 157px;
+    grid-column-gap: 4vw;
+    grid-row-gap: 8vw;
     margin-left: auto;
     margin-right: auto;
+}
+@media screen and (max-width: 1919px){
+    .services__cards{
+        grid-template-columns: repeat(2, 550px);
+    }
+}
+@media screen and (max-width: 1279px){
+    .services__cards{
+        grid-template-columns: unset;
+    }
+}
+@media screen and (max-width: 767px){
+    .services__cards{
+        grid-template-columns: repeat(2, 140px);
+    }
 }

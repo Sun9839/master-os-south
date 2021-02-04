@@ -1,7 +1,14 @@
 .card__text{
-    margin: 40px 0 0 40px;
+    margin: 0;
+    padding: 150px 0 0 40px;
     font-size: 33px;
     line-height: 39px;
     color: #242424;
-    height: 78px;
+}
+@media screen and (max-width: 767px){
+    .card__text{
+        font-size: 8px;
+        line-height: 9px;
+        padding: 40px 0 0 15px;
+    }
 }
