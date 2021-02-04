@@ -1,0 +1,8 @@
+@import url('./__logo/advantage__logo.css');
+@import url('./__title/advantage__title.css');
+@import url('./__text/advantage__text.css');
+.advantage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

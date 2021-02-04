@@ -1,0 +1,8 @@
+.services__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 550px);
+    grid-column-gap: 78px;
+    grid-row-gap: 157px;
+    margin-left: auto;
+    margin-right: auto;
+}

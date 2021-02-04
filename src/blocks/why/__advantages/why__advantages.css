@@ -1,0 +1,8 @@
+.why__advantages{
+    display: flex;
+    flex-direction: row;
+    margin: 87px auto 0 auto;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+}

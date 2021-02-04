@@ -1,0 +1,12 @@
+@import url('./__title/about__title.css');
+@import url('./__text/about__text.css');
+@import url('./__rectangle/about__rectangle.css');
+@import url('./__team/about__team.css');
+.about{
+    display: flex;
+    flex-direction: column;
+    background: #242424;
+    position: relative;
+    padding-bottom: 331px;
+    overflow: hidden;
+}

@@ -1,0 +1,13 @@
+.preview__white-rectangle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    max-height: 1280px;
+    z-index: 2;
+}
+@media screen and (max-width: 768px){
+    .preview__white-rectangle{
+        display: none;
+    }
+}

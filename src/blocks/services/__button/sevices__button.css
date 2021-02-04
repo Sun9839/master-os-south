@@ -1,0 +1,14 @@
+@import url('./_active/services__button_active.css');
+.services__button{
+    display: none;
+    background: #242424;
+    border-radius: 47px;
+    color: #FFD36A;
+    font-size: 50px;
+    line-height: 73px;
+    border: none;
+    outline: none;
+    width: 679px;
+    height: 129px;
+    margin: 70px auto 0 auto;
+}

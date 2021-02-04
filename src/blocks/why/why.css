@@ -1,0 +1,8 @@
+@import url('./__title/why__title.css');
+@import url('./__advantages/why__advantages.css');
+.why{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 36px;
+    background: #F4F1EC;
+}

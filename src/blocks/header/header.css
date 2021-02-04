@@ -1,0 +1,14 @@
+@import url('./__open-nav/header__open-nav.css');
+@import url('./__open-nav-button/header__open-nav-button.css');
+@import url('./__logo/header__logo.css');
+.header{
+    display: flex;
+    flex-direction: row;
+    margin: 83px 40px 0 40px;
+}
+@media screen and (max-width: 767px){
+    .header{
+        margin: 40px auto 0 auto;
+        width: 288px;
+    }
+}

@@ -1,0 +1,10 @@
+@import url('./__color/services__color_white.css');
+@import url('./__color/services__color_black.css');
+@import url('./__title/services__title.css');
+@import url('./__button/sevices__button.css');
+@import url('./__cards/services__cards.css');
+.services{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}

@@ -1,0 +1,19 @@
+@import url('./__question/preview__question.css');
+@import url('./__under-question/preview__under-question.css');
+@import url('./__button/preview__button.css');
+@import url('./__white-rectangle.css');
+@import url('./__yellow-rectangle.css');
+@import url('./__mouse/preview__mouse.css');
+@import url('./__master/preview__master.css');
+.preview{
+    background: #242424;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+@media screen and (max-width: 767px){
+    .preview{
+        overflow: unset;
+    }
+}

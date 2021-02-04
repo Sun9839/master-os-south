@@ -1,0 +1,18 @@
+.preview__master{
+    position: absolute;
+    width: 860px;
+    height: 629px;
+    right: 262px;
+    bottom: 0;
+    z-index: 2;
+}
+@media screen and (max-width: 767px){
+    .preview__master{
+        position: unset;
+        bottom: unset;
+        right: unset;
+        width: 288px;
+        height: 195px;
+        margin: 61px auto -30px auto;
+    }
+}

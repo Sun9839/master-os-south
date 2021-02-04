@@ -1,0 +1,10 @@
+.preview__yellow-rectangle{
+    height: auto;
+    margin-top: 81px;
+    max-width: 100%;
+}
+@media screen and (max-width: 768px){
+    .preview__yellow-rectangle{
+        display: none;
+    }
+}

@@ -1,0 +1,11 @@
+.navigation__link.navigation__link_color_black{
+    color: #242424;
+    margin: 33px 66px 0 0;
+}
+@media screen and (max-width: 767px){
+    .navigation__link.navigation__link_color_black{
+        font-size: 18px;
+        line-height: 24px;
+        margin: 40px auto 0 auto;
+    }
+}

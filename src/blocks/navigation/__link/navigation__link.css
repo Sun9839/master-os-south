@@ -1,0 +1,15 @@
+@import url('_color/navigation__link_color_black.css');
+.navigation__link{
+    color: #FBFBFB;
+    font-size: 33px;
+    line-height: 33px;
+    margin: 33px 111px 0 0;
+}
+@media screen and (max-width: 767px){
+    .navigation__link{
+        font-size: 18px;
+        line-height: 24px;
+        margin: 40px auto 0 auto;
+        color: #242424;
+    }
+}

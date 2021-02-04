@@ -1,0 +1,15 @@
+.header__open-nav{
+    display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .header__open-nav{
+        display: unset;
+        background: none;
+        border: none;
+        outline: none;
+        margin-left: auto;
+        z-index: 10;
+        width: 37px;
+        height: 28px;
+    }
+}

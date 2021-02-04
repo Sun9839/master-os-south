@@ -1,0 +1,18 @@
+.preview__under-question{
+    color: #FFD36A;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 40px 0 0 40px;
+    z-index: 3;
+    font-weight: 500;
+
+}
+@media screen and (max-width: 767px){
+    .preview__under-question{
+        margin: 20px auto 0 auto;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        width: 288px;
+    }
+}
