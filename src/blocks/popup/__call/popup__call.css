@@ -1,0 +1,19 @@
+.popup__call{
+    position: absolute;
+}
+@media screen and (min-width: 320px){
+    .popup__call{
+        height: 36px;
+        width: 36px;
+        bottom: 3px;
+        left: 130px;
+    }
+}
+@media screen and (min-width: 768px){
+    .popup__call{
+        width: 78px;
+        height: 78px;
+        left: 277px;
+        bottom: 20px;
+    }
+}

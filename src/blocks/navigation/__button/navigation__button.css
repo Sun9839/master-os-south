@@ -8,11 +8,14 @@
     color: #FFD36A;
     width: 338px;
     height: 88px;
+    cursor: pointer;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
     .navigation__button{
         position: absolute;
         bottom: 0;
+        border-radius: unset;
+        width: 60vw;
         background: #FFD36A;
         align-items: flex-end;
         color: #242424;
@@ -20,10 +23,14 @@
 }
 @media screen and (max-width: 767px){
     .navigation__button{
-        width: 288px;
-        height: 60px;
+        width: 60vw;
+        height: 37px;
         font-size: 18px;
+        color: #242424;
+        background: #FFD36A;
+        border-radius: unset;
         line-height: 24px;
-        margin: 40px auto 0 auto;
+        position: absolute;
+        bottom: 0;
     }
 }

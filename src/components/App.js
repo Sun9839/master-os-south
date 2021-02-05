@@ -4,6 +4,7 @@ import About from './About';
 import Why from './Why';
 import Services from './Services';
 import Footer from './Footer';
+import Popup from './Popup';
 
 import serviceOne from '../images/service1.svg';
 import serviceTwo from '../images/service2.svg';
@@ -113,9 +114,22 @@ function App(props) {
             price: 'от 600 р.'
         },
     ];
+    const [popupState, setPopupState] = React.useState(false);
+    function openPopup(){
+        setPopupState(true);
+    }
+    function closePopup() {
+        setPopupState(false);
+    }
     return(
         <div className='page'>
-            <Preview />
+            <Popup
+                state={popupState}
+                closePopup={closePopup}
+            />
+            <Preview
+                openPopup={openPopup}
+            />
             <About />
             <Why />
             <Services
@@ -125,6 +139,7 @@ function App(props) {
                 button={false}
             />
             <Services
+                openPopup={openPopup}
                 color='white'
                 cards={secondCards}
                 button={true}

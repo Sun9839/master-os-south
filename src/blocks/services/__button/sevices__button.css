@@ -1,6 +1,7 @@
 @import url('./_active/services__button_active.css');
 .services__button{
     display: none;
+    cursor: pointer;
     background: #242424;
     border-radius: 47px;
     color: #FFD36A;

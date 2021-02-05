@@ -2,6 +2,9 @@ import React from 'react';
 import Card from './Card';
 
 function Services(props) {
+    function handleClick() {
+        props.openPopup();
+    }
     return(
         <div className={`services services__color_${props.color}`}>
             <h2  className='services__title'>{props.title}</h2>
@@ -16,7 +19,7 @@ function Services(props) {
                     )
                 })}
             </div>
-            <button className={`services__button ${props.button === true ? 'services__button_active' : ''}`}>Заказать услугу</button>
+            <button onClick={handleClick} className={`services__button ${props.button === true ? 'services__button_active' : ''}`}>Заказать услугу</button>
         </div>
     );
 }

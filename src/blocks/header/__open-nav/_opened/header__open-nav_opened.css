@@ -1,0 +1,9 @@
+.header__open-nav.header__open-nav_opened{
+    position: fixed;
+    right: 5vw;
+}
+@media screen and (min-width: 768px) {
+    .header__open-nav.header__open-nav_opened{
+        right: 40px;
+    }
+}

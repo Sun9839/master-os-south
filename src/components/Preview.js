@@ -6,12 +6,17 @@ import mouse from '../images/mouse.svg';
 import master from '../images/master.png';
 
 function Preview(props) {
+    function handleClick(){
+        props.openPopup();
+    }
     return(
         <div className='preview'>
-            <Header/>
+            <Header
+                clickButton={handleClick}
+            />
             <h2 className='preview__question'>Нужен мастер по замене резиновых уплотнителей?</h2>
             <p className='preview__under-question'>А также иным услугам по ремонту и обслуживанию бытовой техники и сантехники</p>
-            <button className='preview__button'>Оставить заявку</button>
+            <button onClick={handleClick} className='preview__button'>Оставить заявку</button>
             <img alt='mouse' className='preview__mouse' src={mouse} />
             <img className='preview__white-rectangle' alt='rectangle' src={whiteRectangle} />
             <img className='preview__yellow-rectangle' alt='rectangle' src={yellowRectangle} />

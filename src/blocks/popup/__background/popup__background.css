@@ -1,0 +1,18 @@
+.popup__background{
+    position: absolute;
+    bottom: -5px;
+    z-index: -1;
+}
+@media screen and (min-width: 320px){
+    .popup__background{
+        width: 288px;
+        height: 300px;
+    }
+}
+@media screen and (min-width: 768px){
+    .popup__background{
+        width: 632px;
+        height: 631px;
+        left: -7px;
+    }
+}

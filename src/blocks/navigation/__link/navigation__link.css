@@ -9,8 +9,18 @@
     .navigation__link{
         font-size: 18px;
         line-height: 24px;
-        color: #242424;
-        padding: 0 40px 0 0;
-        margin: 0 auto 0 0;
+        padding: 20px 0 0 10vw;
+        margin: 0;
+    }
+    .navigation__link:first-of-type{
+        padding: 100px 0 0 10vw;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    .navigation__link{
+        padding: 30px 0 0 10vw;
+    }
+    .navigation__link:first-of-type{
+        padding: 150px 0 0 10vw;
     }
 }
