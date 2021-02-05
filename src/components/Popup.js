@@ -3,6 +3,7 @@ import logo from '../images/logo.svg';
 import close from '../images/close.svg';
 import call from '../images/call.png';
 import whiteBackground from '../images/white-background.svg';
+import { options } from '../contants/constants';
 
 function Popup(props) {
     function handleClick() {
@@ -16,7 +17,13 @@ function Popup(props) {
                   <img className='popup__close-img' alt='close' src={close} />
               </button>
               <input maxLength={30} required className='popup__input' placeholder='Имя' />
-              <input required className='popup__input' placeholder='Выберите услугу' />
+              <select required className='popup__input_selected' placeholder='Выберите услугу'>
+                  {options.map((item) => {
+                      return(
+                          <option value={item}>{item}</option>
+                      );
+                  })}
+              </select>
               <input  className='popup__input' placeholder='Почта (не обязательно)' />
               <input required className='popup__input' placeholder='Номер телефона*' />
               <span className='popup__span'>*в течении 30 минут с Вами свяжется наш сотрудник</span>
