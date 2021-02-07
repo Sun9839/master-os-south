@@ -9,6 +9,12 @@ function Preview(props) {
     function handleClick(){
         props.openPopup();
     }
+    function scrollDown(){
+        document.querySelector(props.toClick).scrollIntoView({
+            block: 'start',
+            behavior: 'smooth',
+        });
+    }
     return(
         <div className='preview'>
             <Header
@@ -17,7 +23,7 @@ function Preview(props) {
             <h2 className='preview__question'>Нужен мастер по замене резиновых уплотнителей?</h2>
             <p className='preview__under-question'>А также иным услугам по ремонту и обслуживанию бытовой техники и сантехники</p>
             <button onClick={handleClick} className='preview__button'>Оставить заявку</button>
-            <img alt='mouse' className='preview__mouse' src={mouse} />
+            <img onClick={scrollDown} alt='mouse' className='preview__mouse' src={mouse} />
             <img className='preview__white-rectangle' alt='rectangle' src={whiteRectangle} />
             <img className='preview__yellow-rectangle' alt='rectangle' src={yellowRectangle} />
             <img className='preview__master' alt='master' src={master} />

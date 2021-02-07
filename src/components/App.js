@@ -129,6 +129,7 @@ function App(props) {
             />
             <Preview
                 openPopup={openPopup}
+                toClick='.about'
             />
             <About />
             <Why />
