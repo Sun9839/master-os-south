@@ -1,4 +1,4 @@
-import env from "react-dotenv";
+import env from "dotenv"
 class Api{
     constructor(url) {
         this._url = url;

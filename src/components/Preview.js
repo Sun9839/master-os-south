@@ -3,7 +3,7 @@ import Header from "./Header";
 import whiteRectangle from '../images/Rectangle-1.svg';
 import yellowRectangle from '../images/Rectangle-2.svg';
 import mouse from '../images/mouse.svg';
-import master from '../images/master.png';
+import master from '../images/holodos.png';
 
 function Preview(props) {
     function handleClick(){

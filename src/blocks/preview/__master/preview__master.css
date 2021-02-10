@@ -1,9 +1,9 @@
 .preview__master{
     position: absolute;
-    width: 860px;
-    height: 629px;
-    right: 262px;
-    bottom: 0;
+    width: 43vw;
+    height: 41vw;
+    right: 18vw;
+    bottom: -5vw;
     z-index: 2;
 }
 @media screen and (max-width: 1279px){
@@ -19,7 +19,7 @@
         bottom: unset;
         right: unset;
         width: 288px;
-        height: 195px;
+        height: 260px;
         margin: 61px auto -30px auto;
     }
 }

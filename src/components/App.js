@@ -26,6 +26,7 @@ import serviceSeventeen from '../images/service17.svg';
 import serviceEighteen from '../images/service18.svg';
 import serviceNineteen from '../images/service19.svg';
 import serviceTwenty from '../images/service20.svg';
+import env from "react-dotenv";
 
 function App(props) {
     const firstCards = [
