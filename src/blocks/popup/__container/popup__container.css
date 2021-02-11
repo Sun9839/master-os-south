@@ -1,0 +1,7 @@
+.popup__container{
+    position: fixed;
+    top: 40vh;
+    right: 40vw;
+    height: 20vw;
+    width: 20vw;
+}

@@ -5,6 +5,7 @@ import Why from './Why';
 import Services from './Services';
 import Footer from './Footer';
 import Popup from './Popup';
+import OkPopup from "./OkPopup";
 
 import serviceOne from '../images/service1.svg';
 import serviceTwo from '../images/service2.svg';
@@ -26,7 +27,6 @@ import serviceSeventeen from '../images/service17.svg';
 import serviceEighteen from '../images/service18.svg';
 import serviceNineteen from '../images/service19.svg';
 import serviceTwenty from '../images/service20.svg';
-import env from "react-dotenv";
 
 function App(props) {
     const firstCards = [
@@ -116,17 +116,29 @@ function App(props) {
         },
     ];
     const [popupState, setPopupState] = React.useState(false);
+    const [okPopupState, setOkPopupState] = React.useState(false);
     function openPopup(){
         setPopupState(true);
     }
     function closePopup() {
         setPopupState(false);
     }
+    function openOkPopup(){
+        setOkPopupState(true);
+    }
+    function closeOkPopup(){
+        setOkPopupState(false);
+    }
     return(
         <div className='page'>
             <Popup
                 state={popupState}
                 closePopup={closePopup}
+                okPopup={openOkPopup}
+                onCloseOkPopup={closeOkPopup}
+            />
+            <OkPopup
+                state={okPopupState}
             />
             <Preview
                 openPopup={openPopup}

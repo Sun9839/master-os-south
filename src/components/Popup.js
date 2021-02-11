@@ -4,31 +4,22 @@ import close from '../images/close.svg';
 import call from '../images/call.png';
 import whiteBackground from '../images/white-background.svg';
 import { options } from '../contants/constants';
-import { api }from '../utils/utils';
+import ym from 'react-yandex-metrika';
 
 function Popup(props) {
     function handleClick() {
         props.closePopup();
     }
+    function handleSubmit(evt){
+        evt.preventDefault();
+        props.closePopup();
+        props.okPopup()
+        setTimeout(props.onCloseOkPopup, 2500);
+    }
     const nameRef = React.useRef();
     const serviceRef = React.useRef();
     const emailRef = React.useRef();
     const phoneRef = React.useRef();
-    function handleSubmit(e){
-        e.preventDefault();
-        api.submit({
-            name: nameRef.current.value,
-            service: serviceRef.current.value,
-            email: emailRef.current.value,
-            phone: phoneRef.current.value,
-        }).then(() => {
-            props.closePopup();
-        }).catch(() => {
-            props.closePopup();
-        })
-
-
-    }
     return(
         <div className={`popup ${props.state === true ? 'popup__opened' : ''}`}>
           <form onSubmit={handleSubmit} className='popup__form' >
