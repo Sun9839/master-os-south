@@ -12,6 +12,7 @@ function Services(props) {
                 {props.cards.map((item) => {
                     return(
                         <Card
+                            key={Math.random()}
                             image={item.image}
                             text={item.text}
                             price={item.price}

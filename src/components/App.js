@@ -6,6 +6,7 @@ import Services from './Services';
 import Footer from './Footer';
 import Popup from './Popup';
 import OkPopup from "./OkPopup";
+import {YMInitializer} from "react-yandex-metrika";
 
 import serviceOne from '../images/service1.svg';
 import serviceTwo from '../images/service2.svg';
@@ -131,6 +132,7 @@ function App(props) {
     }
     return(
         <div className='page'>
+            <YMInitializer accounts={[72306793]} version="2" />
             <Popup
                 state={popupState}
                 closePopup={closePopup}

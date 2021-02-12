@@ -4,6 +4,7 @@ import close from '../images/close.svg';
 import call from '../images/call.png';
 import whiteBackground from '../images/white-background.svg';
 import { options } from '../contants/constants';
+import { api } from '../utils/api';
 import ym from 'react-yandex-metrika';
 
 function Popup(props) {
@@ -12,9 +13,22 @@ function Popup(props) {
     }
     function handleSubmit(evt){
         evt.preventDefault();
+        ym(72306793,'reachGoal','popapform')
         props.closePopup();
-        props.okPopup()
-        setTimeout(props.onCloseOkPopup, 2500);
+        api.submit({
+            name: nameRef.current.value,
+            email: emailRef.current.value,
+            service: serviceRef.current.value,
+            phone: phoneRef.current.value,
+        }).then(() => {
+            props.okPopup()
+            props.onCloseOkPopup();
+            nameRef.current.value = '';
+            emailRef.current.value = '';
+            phoneRef.current.value = '';
+        }).catch(() => {
+            console.log('не удалось отправить заявку');
+        })
     }
     const nameRef = React.useRef();
     const serviceRef = React.useRef();
@@ -22,7 +36,7 @@ function Popup(props) {
     const phoneRef = React.useRef();
     return(
         <div className={`popup ${props.state === true ? 'popup__opened' : ''}`}>
-          <form onSubmit={handleSubmit} className='popup__form' >
+            <form onSubmit={handleSubmit} className='popup__form' >
               <img className='popup__logo' alt='logo' src={logo} />
               <button type='Button' onClick={handleClick} className='popup__close'>
                   <img className='popup__close-img' alt='close' src={close} />
@@ -31,7 +45,7 @@ function Popup(props) {
               <select ref={serviceRef} required className='popup__input_selected' placeholder='Выберите услугу'>
                   {options.map((item) => {
                       return(
-                          <option value={item}>{item}</option>
+                          <option key={Math.random()} value={item}>{item}</option>
                       );
                   })}
               </select>

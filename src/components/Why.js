@@ -31,6 +31,7 @@ function Why(props) {
                 {advantages.map((item) => {
                     return(
                         <Advantage
+                            key={Math.random()}
                             logoOne={item.logoOne}
                             titleOne={item.titleOne}
                             textOne={item.textOne}
