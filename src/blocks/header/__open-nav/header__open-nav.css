@@ -1,6 +1,7 @@
 @import url('./_opened/header__open-nav_opened.css');
 .header__open-nav{
     display: none;
+    padding: 0;
 }
 @media screen and (max-width: 1279px){
     .header__open-nav{
@@ -12,5 +13,6 @@
         z-index: 101;
         width: 37px;
         height: 28px;
+        position: relative;
     }
 }

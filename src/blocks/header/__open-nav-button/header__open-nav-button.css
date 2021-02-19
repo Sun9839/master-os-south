@@ -1,5 +1,7 @@
 .header__open-nav-button{
     width: 37px;
     height: 28px;
-    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
